@@ -1,0 +1,262 @@
+.container{
+    background-image: url('../../../assets/home-banner-2.jpg');
+    position: relative;
+    height: 650px;
+    margin-bottom: 130px;
+    object-fit: cover;
+    object-position: top center;
+}
+.nav{
+    z-index: 99;
+    position: absolute;
+}
+.first{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+.meyve, .terevez, .bos{
+    width: 292px;
+    height: 200px;
+}
+.meyve, .terevez p{
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+    padding: 10px;
+}
+.meyve{
+    background-color: #1A5221;
+}
+.terevez{
+    background-color: #91B40D;
+}
+.meyve img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    object-position: bottom;
+    object-fit: contain;
+    object-position: bottom right;
+}
+.terevez img{
+    margin-left: 40px;
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    object-position: bottom right;
+}
+
+.about
+{
+  width: 100%;
+  margin-bottom: 100px;
+}
+.about-wrapper
+{
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+}
+.about-img{
+    width: 1100px;
+}
+.about-img img{
+    width: 100%;
+    height: 100%;
+}
+.about-item
+{
+    max-width: 90%;
+    max-height: 700px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #F5F5F5;
+}
+.about-title
+{
+    text-align: center;
+    color: #3E3737;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+.about-text
+{
+    text-align: center;
+    margin-left: 135px;
+    margin-right: 135px;
+    color: #3E3737;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6em;
+}
+.about-logo-item-wrapper
+{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+.about-logo-item-wrapper img{
+    width: 40px;
+    height: 40px;
+}
+.about-logo-item
+{ 
+    margin-bottom: 25px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-logo-item-title
+{
+    font-family: 'Cormorant Garamond', serif;
+    color: #3E3737;
+    text-align: center;
+}
+.about-design
+{
+    position: absolute;
+    margin-left: -420px;
+    margin-top: -100px;
+}   
+@media only screen and (max-width:1340px)
+{
+   .about-design
+   {
+    display: none;
+   }
+}
+@media only screen and (max-width: 960px)
+{
+    .about-wrapper
+    {
+        display: flex;
+    }
+    .about-img
+    {
+        overflow: hidden;
+    }
+    .about-img img
+    {
+        width: 400px;
+        height: 600px;
+    }
+    .about-info
+    {
+        max-width: 575px;
+        max-height: 350px;
+    }
+    .about-text
+    {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .about-logo-item-wrapper
+    {
+        display: none;
+    }
+    .about-shortcut,
+    .about-design
+    {
+        display: none;
+    }
+    .about-logo-item
+    {
+        max-width: 25px;
+    }
+}
+@media only screen and (max-width: 768px)
+{
+    .about-wrapper
+    {
+        display: block;
+    }
+    .big-about-img
+    {
+        display: none;
+    }
+    .small-about-img
+    {
+        display: none;
+    }
+    .about-info
+    {
+        width: 100%;
+    }
+}
+
+
+footer
+{
+    background: url(../../../assets/footer-background.png) no-repeat;
+    background-size: cover;
+}
+.footer
+{
+    display: flex;
+}
+.footer-item
+{
+    padding-top: 250px;
+    margin-left: 120px;   
+}
+.footer-item-title
+{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.footer-item ul
+{
+    list-style: none;
+}
+.footer-item ul li a
+{
+   text-decoration: none;
+   color: #FFFFFF;
+   font-family: 'Cormorant Garamond', serif;
+   font-size: 15px;
+   font-weight: 500;
+}
+li{
+    color: white;
+}
+
+@media only screen and (max-width: 1200px)
+{
+    .footer-item
+    {
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 768px)
+{
+    .footer
+    {
+        display: block;
+    }
+    .footer-logo
+    {
+        padding-top: 250px;
+        text-align: center;        
+    }
+    .footer-item
+    {
+        margin: 0;
+        padding: 0;
+    }
+}

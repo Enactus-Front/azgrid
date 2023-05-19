@@ -1,0 +1,75 @@
+<div class="navbar fixed w-full px-6 py-3">
+    <div class="container flex flex-col ">
+        <div class="header-top flex justify-between">
+                <a class="flex tel gap-2" href="tel:+994705555777">
+                    <img src="../../../assets/telephone.svg" alt="">
+                    <span>994705555777</span>
+                </a>
+            <div class="socail">
+                <ul class="flex gap-3">
+                    <li>
+                        <a href="https://www.facebook.com/enactus.azerbaijan/">
+                            <img width="22" src="../../../assets/facebook.svg"  alt="Facebook Logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/enactus-ascca/">
+                            <img width="22" src="../../../assets/linkedin.svg" alt="Linkedin Logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/enactus.ascca/?utm_medium=copy_link">
+                            <img width="22" src="../../../assets/instagram.svg" alt="Instagram Logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/enactus">
+                            <img width="22" src="../../../assets/youtube.svg" alt="Youtube Logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-bottom flex justify-between">
+            <div [class.active]="activeNavbar" class="navbar-bg">
+                <div class="mobile-navbar">
+                    <div class="top flex justify-between">
+                        <img src="../../../assets/logo.svg" class="mobile-logo">
+                        <ul (click)="toggle()" class="close-icon">
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                <div class="navbar-logo text-lg font-semibold text-white"><a routerLink="/products"><img src="../../../assets/logo.svg" alt=""></a></div>
+                <ul [class.activeList]="activeNavbar" class="flex gap-3 navbar-list items-center text-white text-lg font-semibold">
+                    <li class="opacity-70 hover:opacity-100 ">
+                        <a routerLink="/home">Home</a>
+                    </li>
+                    <li class="opacity-70 hover:opacity-100 ">
+                        <button routerLink="/shop">Products</button>
+                    </li>
+                    <li class="opacity-70 hover:opacity-100 ">
+                        <button routerLink="/checkout">Orders</button>
+                    </li>
+                    <li class="opacity-70 hover:opacity-100 ">
+                        <button routerLink="/admin/main">Admin</button>
+                    </li>
+                </ul>
+            <ul class="flex navbar-right items-center">
+                <li (click)="toggle()" [class.activeIcon]="activeNavbar" class="md:hidden block hamburger-icon">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </li>
+                <li class="opacity-70 md:block hidden hover:opacity-100">
+                    <button class="flex gap-1 cart-icon" routerLink="/cart">
+                        <span>{{cart.total | currency: '₼'}}</span>
+                        <img width="25" src="../../../assets/cart.svg" alt="">
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>    
+</div>
